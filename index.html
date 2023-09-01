@@ -1,25 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
-   <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <main class="main">
-    <img src="./img//mainBackground.png" alt="background" class="img"/>
-    <button class="btn btn_green first"></button>
-    <button class="btn btn_green second"></button>
-    <button class="btn btn_green third"></button>
-    <button class="btn btn_green fourth"></button>
-    <button class="btn btn_blue fifth"></button>
-    <button class="btn btn_blue"></button>
-    <button class="btn btn_blue"></button>
-    <button class="btn btn_blue"></button>
-    <button class="btn btn_blue"></button>
-    <button class="btn btn_blue"></button>
-  </main>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <img src="./img//mainBackground.png" alt="background" class="img" />
+      <div class="buttons_wrapper">
+        <button data-name="first" class="btn btn_green first">
+          <svg
+            class="btn_plus"
+            width="10"
+            height="10"
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M5 0V10M0 5H10" stroke="white" stroke-width="2" />
+          </svg>
+
+          <svg
+            class="hidden btn_minus"
+            width="10"
+            height="2"
+            viewBox="0 0 10 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1H10" stroke="white" stroke-width="2" />
+          </svg>
+
+          <div id="first" class="buttonContent hidden buttonContent_green">
+            Стадион
+          </div>
+        </button>
+        <button data-name="second" class="btn btn_green second">
+          <svg
+            class="btn_plus"
+            width="10"
+            height="10"
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M5 0V10M0 5H10" stroke="white" stroke-width="2" />
+          </svg>
+
+          <svg
+            class="hidden btn_minus"
+            width="10"
+            height="2"
+            viewBox="0 0 10 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1H10" stroke="white" stroke-width="2" />
+          </svg>
+          <div id="second" class="buttonContent hidden buttonContent_green">
+            Вокзал
+          </div>
+        </button>
+        <button data-name="third" class="btn btn_green third">
+          <svg
+            class="btn_plus"
+            width="10"
+            height="10"
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M5 0V10M0 5H10" stroke="white" stroke-width="2" />
+          </svg>
+
+          <svg
+            class="hidden btn_minus"
+            width="10"
+            height="2"
+            viewBox="0 0 10 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1H10" stroke="white" stroke-width="2" />
+          </svg>
+          <div id="third" class="buttonContent hidden buttonContent_green">
+            Отель
+          </div>
+        </button>
+        <button data-name="fourth" class="btn btn_green fourth">
+          <svg
+            class="btn_plus"
+            width="10"
+            height="10"
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M5 0V10M0 5H10" stroke="white" stroke-width="2" />
+          </svg>
+
+          <svg
+            class="hidden btn_minus"
+            width="10"
+            height="2"
+            viewBox="0 0 10 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1H10" stroke="white" stroke-width="2" />
+          </svg>
+          <div id="fourth" class="buttonContent hidden buttonContent_green">
+            Апартаменты
+          </div>
+        </button>
+        <button data-name="fifth" class="btn btn_blue fifth">
+          <svg
+            class="btn_plus"
+            width="10"
+            height="10"
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M5 0V10M0 5H10" stroke="white" stroke-width="2" />
+          </svg>
+
+          <svg
+            class="hidden btn_minus"
+            width="10"
+            height="2"
+            viewBox="0 0 10 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1H10" stroke="white" stroke-width="2" />
+          </svg>
+          <div id="fifth" class="buttonContent hidden buttonContent_green">
+            Стоянка
+          </div>
+        </button>
+        <button data-name="sixth" class="btn btn_blue sixth">
+          <svg
+            class="btn_plus"
+            width="10"
+            height="10"
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M5 0V10M0 5H10" stroke="white" stroke-width="2" />
+          </svg>
+
+          <svg
+            class="hidden btn_minus"
+            width="10"
+            height="2"
+            viewBox="0 0 10 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1H10" stroke="white" stroke-width="2" />
+          </svg>
+          <div id="sixth" class="buttonContent hidden buttonContent_green">
+            Пирс
+          </div>
+        </button>
+        <button data-name="seventh" class="btn btn_blue seventh">
+          <svg
+            class="btn_plus"
+            width="10"
+            height="10"
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M5 0V10M0 5H10" stroke="white" stroke-width="2" />
+          </svg>
+
+          <svg
+            class="hidden btn_minus"
+            width="10"
+            height="2"
+            viewBox="0 0 10 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1H10" stroke="white" stroke-width="2" />
+          </svg>
+          <div id="seventh" class="buttonContent hidden buttonContent_green">
+            Крыша
+          </div>
+        </button>
+        <button data-name="eighth" class="btn btn_blue eighth">
+          <svg
+            class="btn_plus"
+            width="10"
+            height="10"
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M5 0V10M0 5H10" stroke="white" stroke-width="2" />
+          </svg>
+
+          <svg
+            class="hidden btn_minus"
+            width="10"
+            height="2"
+            viewBox="0 0 10 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1H10" stroke="white" stroke-width="2" />
+          </svg>
+          <div id="eighth" class="buttonContent hidden buttonContent_green">
+            Дом
+          </div>
+        </button>
+        <button data-name="ninth" class="btn btn_blue ninth">
+          <svg
+            class="btn_plus"
+            width="10"
+            height="10"
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M5 0V10M0 5H10" stroke="white" stroke-width="2" />
+          </svg>
+
+          <svg
+            class="hidden btn_minus"
+            width="10"
+            height="2"
+            viewBox="0 0 10 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1H10" stroke="white" stroke-width="2" />
+          </svg>
+          <div id="ninth" class="buttonContent hidden buttonContent_green">
+            Служебное здание
+          </div>
+        </button>
+        <button data-name="tenth" class="btn btn_blue tenth">
+          <svg
+            class="btn_plus"
+            width="10"
+            height="10"
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M5 0V10M0 5H10" stroke="white" stroke-width="2" />
+          </svg>
+
+          <svg
+            class="hidden btn_minus"
+            width="10"
+            height="2"
+            viewBox="0 0 10 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 1H10" stroke="white" stroke-width="2" />
+          </svg>
+          <div id="tenth" class="buttonContent hidden buttonContent_green">
+            Апартаменты
+          </div>
+        </button>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
 </html>

@@ -4,6 +4,10 @@ body {
 
 .main {
   position: relative;
+  overflow: hidden;
+  height: 100vh;
+  min-width: 1280px;
+  min-height: 768px;
 }
 
 .img {
@@ -12,14 +16,19 @@ body {
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   background: transparent;
   border: none;
   height: 41px;
-  width: 41px;
-  border-radius: 100%;
-  background-image: url(./img//plus.svg);
+  min-width: 41px;
+  border-radius: 40px;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
+  color: #fff;
 }
 
 .btn_green {
@@ -32,6 +41,18 @@ body {
   background-color: #3877ee;
 }
 
+.btn_minus {
+  padding-left: 10px;
+}
+
+.buttonContent {
+  padding: 11px 15px 11px 15px;
+}
+
+.hidden {
+  display: none;
+}
+
 .first {
   position: absolute;
   top: 41%;
@@ -40,24 +61,54 @@ body {
 
 .second {
   position: absolute;
-      top: 35%;
-        right: 39%;
+  top: 35%;
+  right: 39%;
 }
 
 .third {
   position: absolute;
-      top: 71%;
-        right: 41%;
+  top: 71%;
+  right: 41%;
 }
 
 .fourth {
   position: absolute;
-        top: 60%;
-          right: 30%;
+  top: 60%;
+  right: 30%;
 }
 
 .fifth {
   position: absolute;
-    top: 50%;
-    right: 30%;
+  top: 25%;
+  left: 31%;
+}
+
+.sixth {
+  position: absolute;
+  top: 64%;
+  left: 23%;
+}
+
+.seventh {
+  position: absolute;
+  top: 58%;
+  left: 56%;
+}
+
+.eighth {
+  position: absolute;
+  top: 20%;
+  right: 26%;
+}
+
+.ninth {
+  position: absolute;
+  top: 43%;
+  right: 24%;
+}
+
+.tenth {
+  position: absolute;
+  top: 66%;
+  right: 15%;
 }
